@@ -1,0 +1,21 @@
+<div class="cards">
+    <div class="card front">
+        <div class="header-card">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+        </div>
+        <div class="input-number">
+            <span>{{ cardInput.cardNumber | slice:0:4 }} {{ cardInput.cardNumber | slice:4:8 }} {{ cardInput.cardNumber | slice:8:12 }} {{ cardInput.cardNumber | slice:12 }}</span>
+        </div>
+        <div class="input-name">
+            <span class="name">{{cardInput.cardName}}</span>
+            <span class="date">{{date}}</span>
+        </div>
+    </div>
+    <div class="card verse">
+        <div class="tarja"></div>
+        <div class="ccv">
+            <div class="cc">{{cardInput.cardSecurity}}</div>
+        </div>
+    </div>
+</div>

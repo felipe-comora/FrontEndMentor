@@ -1,0 +1,21 @@
+<form [formGroup]="cardForm">
+    <div class="form-group">
+        <label for="name">Nome Impresso No Cartão</label>
+        <input type="text" maxlength="20" class="form-control" id="nome" placeholder="e.g. Felipe Comora" name="cardName" formControlName="cardName">
+    </div>
+    <div class="form-group">
+        <label for="name">Numero do Cartão</label>
+        <input type="text" maxlength="16" pattern="[0-9]+" required class="form-control" id="card-number" placeholder="e.g. 1234 5678 9123 0000" name="cardNumber" formControlName="cardNumber">
+    </div>
+    <div class="form-group-date form-group" style="padding-top: 25px;">
+        <label for="name">Data de exp. [MM/YY]</label>
+        <label for="name" style="margin-left:63px;">CVC</label>
+
+    </div>
+    <div class="form-group-date">
+        <input type="text" maxlength="2" class="form-control" id="MM" placeholder="MM" name="cardMonth" formControlName="cardMonth">
+        <input type="text" maxlength="2" class="form-control" id="YY" placeholder="YY" name="cardYear" style="margin-left: 20px;" formControlName="cardYear">
+        <input type="text" maxlength="3" class="form-control" id="CVC" placeholder="e.g. 123" name="cardCVC" style="margin-left: 30px;" formControlName="cardSecurity">
+    </div>
+    <button type="submit" class="btn-confirm" (click)="insertCard()">Confirmar</button>
+</form>

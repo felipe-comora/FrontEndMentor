@@ -1,0 +1,21 @@
+.credit-card{
+    .gradient{
+        width: 483px;
+        height: 100%;
+        position: fixed;
+        background-color: #21092F ;
+        background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+    }
+    .card-component{
+        position: absolute;
+        top: 187px;
+        left: 150px;
+    }
+    .input{
+        width: 380px;
+        height: 352px;
+        margin-left: 1000px;
+        padding-top: 300px;
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,12 @@
+<div class="credit-card">
+    <div class="gradient">
+    </div>
+    <app-cards class="card-component"
+    [cardInput]="cardInfo">
+    </app-cards>
+    <div class="input">
+        <app-card-input class="card-input"
+        (cardEmitter)="getInputCard($event)"
+        ></app-card-input>
+    </div>
+</div>
